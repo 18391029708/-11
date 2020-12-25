@@ -1,0 +1,6 @@
+<!--pages/campus/campus.wxml-->
+<view class='ct'>
+  <view class='projectItem' wx:for="{{project}}" bindtap='correspond'>
+    <view bindtap='turn'>{{item.name}}</view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/faceIdentification/faceIdentification.wxml-->
+<!-- <<view class="container">
+        相机组件
+        <!-- <camera
+          <!-- class="camera"
+          device-position="front"
+          flash="off"
+          binderror="error"
+        ></camera>
+      
+        <view class="button_container"> -->
+          <!-- 按钮组件，点击上传人脸库 -->
+          <!-- <button class="button"
+                  bindtap="upload">上传人脸库 </button> -->
+          <!-- 按钮组件，进行人脸识别 -->
+          <!-- <button class="button"
+                  bindtap="check">人脸库识别 </button> -->
+        <!-- </view>
+      </view> --> --> -->
+<view class="uploader">
+  <camera class="camera" device-position="front" flash="off" binderror="handleBindCameraFail">
+    <cover-image class="verifycode-cover" src="http://imgcache.qq.com/open_proj/proj_qcloud_v2/wx/bg-face.png"></cover-image>
+    <cover-view class="camera-cover">
+      <cover-view class="step-wrap">
+        <cover-view class="num cur">1</cover-view>
+        <cover-view class="num">2</cover-view>
+        <cover-view class="num">3</cover-view>
+      </cover-view>
+      <cover-view class="main-tips">眨眼睛</cover-view>
+      <cover-view class="sub-tips">倒计时10秒</cover-view>
+    </cover-view>
+
+  </camera>
+</view>

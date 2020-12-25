@@ -1,0 +1,82 @@
+/**index.wxss**/
+.box1{
+  display:flex;
+  text-align:center;
+  margin: 20px ;
+  height: 300rpx;
+}
+/* 表白墙 */
+.box11{
+  flex-grow:1;
+  background-color:#FF69B4;
+  border-radius: 25px;
+  color:#F7EED6;
+  font-size: 20px;
+  font-weight: 900;
+ 
+}
+.text2{
+  text-align: center;
+  margin-top:60px ;
+}
+/* 失物招领 */
+.box12{  
+  flex-grow:1.5;
+  background-color: #FF69B4;
+  border-radius: 25px;
+  margin-left:20px;
+  color:  #F7EED6;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* 轮播图 */
+.box2{
+  background-color: #FF69B4;
+  height: 100px;
+  border-radius: 25px;
+  margin: 20px;
+  text-align: center;
+  line-height: 100px;
+  color:#F7EED6;
+  font-size: 20px;
+  font-weight: 900;
+} 
+/* 电车搭乘 */
+.box3{
+  height: 120px;
+  border-radius: 20%;
+  background-color:	#FF69B4;
+  text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  color:#F7EED6;
+  font-size: 20px;
+  font-weight: 900;
+ 
+}
+
+.box31{
+  height: 120px;
+  border-radius: 20%;
+  background-color:	#69e9ff;
+  text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  color:#F7EED6;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+.box22{
+  height: 150px;
+  margin: 20px;
+  border-radius: 25px;
+}
+.text3{
+  margin-top: 50px;
+  margin-left: 20px;
+  color:#F7EED6;
+  font-size: 20px;
+  font-weight: 700;
+}

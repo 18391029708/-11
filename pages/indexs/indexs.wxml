@@ -1,0 +1,26 @@
+<view class="ct">
+ 
+  <view class="box1">
+  <view class="box11" bindtap="confession">
+    <view class="text2">
+      <text >表白墙</text>
+    </view>
+  </view>
+  <view class="box12" bindtap='lost'>失物招领</view>
+  </view>
+  <view class="box2">
+    <text>轮播图</text>   
+  </view>
+
+    <view class="box3" bindtap="mapTap" hidden="{{hidden2}}" >
+    <view class="text3">
+      <text>电车搭乘</text>
+    </view>
+  </view>
+  <view class="box31" bindtap="driverForm" hidden="{{!hidden2}}">
+    <view class="text3" >
+      <text>电车接乘</text>
+    </view>
+  </view>  
+</view>
+

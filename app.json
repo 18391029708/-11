@@ -1,0 +1,91 @@
+{
+  "pages": [
+     "pages/indexs/indexs",
+    "pages/confession/confession",
+    "pages/personal/personal",
+    "pages/schoolfellow/schoolfellow",
+    "pages/login/login",
+    "pages/mymessage/mymessage",
+   
+    "pages/detail/detail",
+    "pages/map/map",
+    "pages/payment/payment",
+    "pages/confirm/confirm",
+    "pages/showmessage/showmessage",
+    "pages/mymoney/mymoney",
+    "pages/set/set",
+    "pages/regulation/regulation",
+    "pages/service/service",
+    "pages/campus/campus",
+    "pages/indentification/indentification",
+    "pages/driverForm/driverForm",
+    "pages/lost/lost",
+    "pages/userInfo/userInfo",
+    
+    "pages/faceIdentification/faceIdentification",
+    "pages/electricVehicle/electricVehicle",
+    "pages/takePhoto/takePhoto",
+    "pages/bankCard/bankCard",
+    "pages/myway/myway"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将会被展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    
+    "navigationBarBackgroundColor": "#FF69B4",
+    "navigationBarTitleText": "顺哒校园",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+        {
+          "pagePath": "pages/indexs/indexs",
+          "text": "首页",
+          "iconPath": "icons/index.png",
+          "selectedIconPath": "icons/_index.png"
+        },
+        {
+          "pagePath": "pages/campus/campus",
+          "text": "校园",
+          "iconPath": "icons/campus.png",
+          "selectedIconPath": "icons/_campus.png"
+        },
+       
+        {
+          "pagePath": "pages/schoolfellow/schoolfellow",
+          "text": "校友",
+          "iconPath": "icons/schoolfellow.png",
+          "selectedIconPath": "icons/_schoolfellow.png"
+        },
+        {
+          "pagePath": "pages/myway/myway",
+          "text": "订单",
+          "iconPath": "icons/order.png",
+          "selectedIconPath": "icons/_order.png"
+        },
+        {
+          "pagePath": "pages/personal/personal",
+          "text": "我的",
+          "iconPath": "icons/me.png",
+          "selectedIconPath": "icons/_me.png"
+        }
+      ],
+      
+      "selectedColor":"#FFC0CB",
+      "position": "bottom"
+  },
+  
+  "plugins": {
+    "ocr-plugin": {
+      "version": "3.0.6",
+      "provider": "wx4418e3e031e551be"
+    }
+  },
+
+  "sitemapLocation": "sitemap87.json",
+  "cloud":true
+}

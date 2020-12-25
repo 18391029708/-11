@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "enablePullDownRefresh": true,
+
+  "usingComponents": {
+    "comment-bottom": "../comment-bottom/index"
+  }
+}

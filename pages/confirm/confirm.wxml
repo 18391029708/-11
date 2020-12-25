@@ -1,0 +1,22 @@
+<!--pages/confirm/confirm.wxml-->
+<view class="ct">
+  <view class='box1'>
+    <view class='text1'>性别
+      <radio-group style="margin-left:30px;" >
+        <radio value="true" checked="" />男
+        <radio value="false" checked="" style="margin-left:30px;" />女
+      </radio-group>
+    </view>
+  </view>
+  <view class='box2'>
+    <view class="text">指定校友</view>
+  </view>
+  <view class='box3'>
+    <view>确认订单信息</view>
+    <view>起点：{{position}}</view>
+    <view>终点：{{EndPosition}}</view>
+    <view>金额： 2元 </view>
+  </view>
+  
+  <button bindtap='payMent'>确认支付</button>
+</view>

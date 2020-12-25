@@ -1,0 +1,85 @@
+page{
+  background: rgba(255, 192, 203, 0.5);
+}
+
+.page{
+  width: 100%;
+  /* overflow-x: hidden */
+}
+.type{
+  background-color: turquoise;
+}
+
+.publish{
+  float: right;
+}
+
+.CircleList{
+  background: rgba(255, 192, 203, 0.5);
+  margin-bottom: 1px;
+  border-bottom: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+}
+.lostPhoto{
+  height:flex;
+  background-color: rgba(34, 139, 125, 0.5);
+}
+.line{
+  width: 90%;
+  background: white;
+
+  height: 1px;
+}
+
+.wrap{
+  width:90%;
+  margin-left:5%;
+  margin-top:10px;
+  font-size:15px;
+}
+.contant_wrap{
+    background-color: #fff;
+}
+.contant{
+    width: 94%;
+    margin: 0 auto
+}
+/* textarea{
+    min-height:300rpx;
+    max-height: 300rpx;
+    padding: 10rpx 0;
+    width: 100%;
+   
+} */
+.contant-pic{
+  width: 94%;
+  margin: 0 auto;
+  height:80px;
+ 
+}
+.pics-list{
+  width:73px;
+  height:73px;
+  float:left;
+  margin-right:6px;
+ 
+}
+.uploadImg{
+  width:70px;
+  height:70px;
+}
+
+.uploadImg-error{
+  height:25px;
+  width:25px;
+  position:relative;
+  top:-80px;
+  left:55px;
+}
+
+/* .hideTrue {
+  display: none
+}
+.true {
+  display: block
+} */

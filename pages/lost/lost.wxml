@@ -1,0 +1,76 @@
+<scroll-view class='page'>
+  <mp-toptips msg="{{error}}" type="{{type}}" bindhide='{{msg}}' show="{{error}}"></mp-toptips>
+  <view  class='type'>
+    <view class='describe' hidden="{{hidden}}">
+      <view class="itemView">类型：
+        <input class="input" name="userName" placeholder="请输入失物类型" bindinput="userNameInput" />
+      </view>
+      <view class='line'></view>
+
+      <view class="itemView">时间：
+        <input class="input" name="userName" placeholder="丢失时间" bindinput="userNameInput" />
+      </view>
+
+      <view class='line'></view>
+
+      <view class="itemView">地点：
+        <input class="input" password placeholder="丢失地点" bindinput="passWdInput" />
+      </view>
+      <view class='line'></view>
+      <view class="itemView">添加描述：
+     
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="" />
+        <view class='line'></view>
+        <view class="contant_wrap">
+    <!-- <view class="contant">
+      <textarea name="bindTextAreaBlur" bindblur="bindTextAreaBlur" auto-height placeholder="请描述您的问题或意见(必填)"  maxlength="600"/>
+    </view> -->
+    <view class="contant-pic">
+      <view class="pics-list" wx:for="{{pics}}" wx:key="" >
+       <image  src="{{item}}" class="uploadImg"></image>
+       <image src="../images/delete.png" class="uploadImg-error" data-img="{{item}}" bindtap='deleteImg'>删除</image>
+      </view>
+      <image src="../images/uploadImg.png" class="uploadImg {{isShow?'true':'hideTrue'}}" bindtap='uploadImage' >上传</image>
+    </view>
+  </view>
+      </view>
+      <button bindtap='statusClick'>{{status}}</button>
+      <view class='line'></view>
+        
+        </view>
+
+  </view>
+ 
+  <button bindtap="publish">{{featurePublish}}</button>
+  <button bindtap="search" >{{featureSearch}}</button>
+  
+  <view class='CircleList' wx:for='{{DataSource}}'>
+    
+    <view class='lostPhoto'></view>
+    <view class='describe'>
+      <view class="itemView">类型：
+        <input class="input" name="userName" placeholder="请输入失物类型" bindinput="userNameInput" />
+      </view>
+      <view class='line'></view>
+
+      <view class="itemView">时间：
+        <input class="input" name="userName" placeholder="丢失时间" bindinput="userNameInput" />
+      </view>
+
+      <view class='line'></view>
+
+      <view class="itemView">地点：
+        <input class="input" password placeholder="丢失地点" bindinput="passWdInput" />
+      </view>
+      <view class='line'></view>
+      <view class="itemView">添加描述：
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="" />
+        
+      </view>
+      <view class='line'></view>
+
+    </view>
+
+  </view>
+
+</scroll-view>

@@ -1,0 +1,12 @@
+
+  <map class='mapstyle' scale='18' markers="{{markers}}" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" ></map>
+  <view class="text"  >
+    <input  value="起点:{{position}}"  />
+    <!-- <input value="{{markers[0].position}}"/> -->
+    <input bindtap="chooseLocation" value="终点:{{EndPosition}}"/> 
+  </view>
+  
+
+  
+  
+  

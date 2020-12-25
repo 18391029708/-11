@@ -1,0 +1,25 @@
+<!--pages/takePhoto/takePhoto.wxml-->
+<!-- 
+  <view>
+    <text>姓名：{{name}}</text>
+  </view>
+  <view>
+    <text>性别：{{gender}}</text>    
+  </view>
+  <view>
+    <text>身份证号：{{id}}</text>
+
+  </view>
+
+ 
+  <view><text>地址：{{addr}}</text></view>
+  <view><text>有效日期:{{valid_date}}</text></view> -->
+  
+
+  <ocr-navigator bind:onSuccess="success" certificateType="idCard" opposite="{{false}}">
+      <button type="primary">身份证正面识别</button>
+    </ocr-navigator>
+    <ocr-navigator bind:onSuccess="Success" certificateType="idCard" opposite="{{true}}">
+      <button type="primary">身份证反面识别</button>
+    </ocr-navigator>
+

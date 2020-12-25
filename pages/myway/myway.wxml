@@ -1,0 +1,17 @@
+<!--pages/personal/myway/myway.wxml-->
+<view class='ct'>
+  <view>订单记录</view>
+<view class='orderRecord'>
+  <view>电车搭乘</view>
+  <view bindtap='detail' >{{status}} </view>
+  <view>起点：{{position}}</view>
+  <view>终点：{{EndPosition}}</view>
+ 
+  <!-- <view>
+  {{item.message}}
+  </view> -->
+</view>
+<!-- <view class='orderRecord' wx:if!==></view> -->
+
+
+</view>

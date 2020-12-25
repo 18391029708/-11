@@ -1,0 +1,6 @@
+<!--pages/schoolfellow/schoolfellow.wxml-->
+<view class='ct'>
+  <view wx:for="{{schoolfellow}}">
+  {{index}}:{{item.name}}
+  </view>
+</view>

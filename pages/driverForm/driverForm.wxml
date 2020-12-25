@@ -1,0 +1,15 @@
+<!--pages/driverForm/driverForm.wxml-->
+<view class="ct">
+  <view class='form'>
+    <view wx:for="{{wayBill}}">
+      <view class='orders'>
+       
+        <view>{{item.position}}</view>
+        <view>{{item.Endposition}}</view>
+        <view>接单</view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

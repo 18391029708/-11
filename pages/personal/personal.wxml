@@ -1,0 +1,85 @@
+<!--pages/personal/personal.wxml-->
+<!-- 头像，号码，普通用户 -->
+<view class='ct'>
+  <view class='head'>
+    <view class='headimage'>
+
+      <view class='frofile_photo'>
+        <image src='{{userInfo.avatarUrl}}' ></image>
+      </view>
+     
+     
+      <view class='choose' hidden='{{chooseBtn}}'><text>同意上线</text>
+        <switch  checked="{{switch1Checked}}" bindchange="aa"></switch>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 功能 -->
+  <view class='middle' style>
+   
+    <view class="divLine"></view>
+    <view class='selection ' bindtap='personal'>
+      <image class="images" src='../images/personmessage.png' ></image>
+      <view class='fontStyle'>校园认证</view>
+      <view class='tendto t1'>
+        <image class="images"  src='../images/enter.png' ></image>
+      </view>
+    </view>
+    <!-- <view class="divLine"></view>
+    <view class='selection' bindtap='indentification'>
+      <image class="images" src='../images/message.png' ></image>
+      <view class='fontStyle'>车手认证</view>
+      <view class='tendto t4'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view> -->
+    <view class="divLine"></view>
+    <view class='selection ' bindtap='mymoney'>
+      <image class="images" src='../images/walk.png' ></image>
+      <view class='fontStyle'>我的钱包</view>
+      <view class='tendto t2'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view>   
+    <view class="divLine"></view>
+    <view class='selection' bindtap='mymessage'>
+      <image class="images" src='../images/message.png' ></image>
+      <view class='fontStyle'>消息中心</view>
+      <view class='tendto t4'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+   <view class="divLine"></view>
+    <view class='selection' bindtap='set'>
+      <image class="images" src='../images/message.png' ></image>
+      <view class='fontStyle' >密码设置</view>
+      <view class='tendto t4'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+   <view class='selection' bindtap='regulation'>
+      <image class="images" src='../images/message.png' ></image>
+      <view class='fontStyle'>平台规则</view>
+      <view class='tendto t4'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+   <view class="divLine"></view>
+    <view class='selection' bindtap='service'>
+      <image class="images" src='../images/message.png' ></image>
+      <view class='fontStyle'>咨询反馈</view>
+      <view class='tendto t4'>
+        <image class="images" src='../images/enter.png' ></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+
+   
+    
+  </view>
+</view>

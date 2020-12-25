@@ -1,0 +1,53 @@
+/* pages/indentification/indentification.wxss */
+
+
+.card{
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.userInfoImage{
+  display: flex;
+}
+.userInfoImage image{
+   width: 80px; 
+   height: 80px;
+   background-color: white;
+   border-radius:80px 80px 80px 80px;
+   flex:1;
+}
+.userInfoImage .info{
+  flex:2;
+  margin: 20px 0;
+  margin-left: 20px;
+}
+.profile_photo{
+ margin-bottom: 30px;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+.personal_info{
+  margin-top: 10px;
+  border-top: 1px solid rgb(219, 218, 218);
+  margin-left: 20px;
+}
+.id_photo{
+  margin-top: 10px;
+  border-top: 1px solid rgb(219, 218, 218);
+  margin-left: 20px;
+}
+
+.title{
+  margin-top: 10px;
+}
+.vehicle .content{
+  margin-bottom: 10px;
+}
+.content{
+  font-size: 14px;
+  color:grey
+}

@@ -1,0 +1,40 @@
+/* pages/faceIdentification/faceIdentification.wxss */
+page {
+  background: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button_container {
+  margin-top: 600rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.camera {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  position: fixed;
+  top: 100rpx;
+}
+
+.button {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 60rpx;
+  background: forestgreen;
+  color: white;
+}
+/* 进行人脸识别 */
+.face-wrap{
+  width:100%;
+  background-color: #fff;
+  align-items:center;
+  height:175rpx;
+  padding-top:67rpx;
+}

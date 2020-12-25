@@ -1,0 +1,10 @@
+/* pages/userInfo/uwerInfo.wxss */
+.line{
+  background: white;
+ width: 100%;
+ height: 1px;
+}
+.content{
+  height: 40px;
+  width: 100%;
+}

@@ -1,0 +1,4 @@
+获得位置：wx.getLocation(OBJECT)
+  type参数：
+    默认为wgs84返回gps坐标
+选择位置：wx.chooseLocation(OBJECT)
