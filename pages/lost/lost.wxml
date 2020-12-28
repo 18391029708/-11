@@ -1,5 +1,6 @@
+<view></view>
 <scroll-view class='page'>
-  <mp-toptips msg="{{error}}" type="{{type}}" bindhide='{{msg}}' show="{{error}}"></mp-toptips>
+  <!-- <mp-toptips msg="{{error}}" type="{{type}}" bindhide='{{msg}}' show="{{error}}"></mp-toptips>
   <view  class='type'>
     <view class='describe' hidden="{{hidden}}">
       <view class="itemView">类型：
@@ -21,11 +22,15 @@
      
         <textarea bindblur="bindTextAreaBlur" auto-height placeholder="" />
         <view class='line'></view>
-        <view class="contant_wrap">
+        <view class="contant_wrap"> -->
+
+          <!-- 原来注释 -->
     <!-- <view class="contant">
       <textarea name="bindTextAreaBlur" bindblur="bindTextAreaBlur" auto-height placeholder="请描述您的问题或意见(必填)"  maxlength="600"/>
     </view> -->
-    <view class="contant-pic">
+    <!-- 结束 -->
+
+    <!-- <view class="contant-pic">
       <view class="pics-list" wx:for="{{pics}}" wx:key="" >
        <image  src="{{item}}" class="uploadImg"></image>
        <image src="../images/delete.png" class="uploadImg-error" data-img="{{item}}" bindtap='deleteImg'>删除</image>
@@ -71,6 +76,8 @@
 
     </view>
 
-  </view>
+  </view> -->
+
+  <!-- 开始 -->
 
 </scroll-view>

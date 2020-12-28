@@ -7,40 +7,31 @@ Page({
   data: {
 
   },
-  pay:function(){
+  payf:function(){
     let that = this;
     var timestamp = Date.parse(new Date());
     console.log(timestamp)
     timestamp = timestamp / 1000;
+    // var outTradeNo = timestamp+timestamp+timestamp+'abc';
     wx.cloud.callFunction({
       name:'pay',
       data: {
-        outTradeNo:timestamp+timestamp+timestamp+'ABC',
-
+        outTradeNo:timestamp+timestamp+timestamp+'abc'
       },
-      
       success: res => {
         console.log(res)
-        // const payment = res.result.payment
-        wx.requestPayment({
-          timeStamp: 'res.result.paymentt.timeStamp',
-          nonceStr: 'res.result.payment.ninceStr',
-          package: 'res.result.payment.package',
-          signType: 'MD5',
-          paySign: 'res.result.payment.paySign',
-          success (res) {
-            wx.showToast({
-              title: '支付成功',
-            })
-            console.log('pay success', res)
-          },
-          fail (res) {
-            console.error('pay fail', err)
-          }
-        })
+        const payment = res.result.payment
+    wx.requestPayment({
+      ...payment,
+      success(res) {
+        console.log('pay success', res)
       },
-      fail: console.error,
+      fail: console.error
     })
+  },
+  fail: console.error,
+})
+ 
   },
   /**
    * 生命周期函数--监听页面加载

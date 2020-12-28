@@ -1,10 +1,19 @@
+<map class='mapstyle' scale='15' markers="{{markers}}"  latitude="{{latitude}}"  longitude="{{longitude}}" >
+</map>
+  <cover-view class="text">
+      <cover-view class="lev1" bindtap="chooseStartLocation">
+        <cover-image class="position1" src="../images/origin.png"></cover-image>
+        <cover-view class="origin"> "起点:{{position}}" </cover-view>
+      </cover-view>
 
-  <map class='mapstyle' scale='18' markers="{{markers}}" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" ></map>
-  <view class="text"  >
-    <input  value="起点:{{position}}"  />
+      <cover-view class="line"></cover-view>
+
+      <cover-view class="lev2" bindtap="chooseLocation">
+        <cover-image class="position2" src="../images/destination.png"></cover-image>
+        <cover-view class="destination">"终点:{{EndPosition}}"</cover-view>
+      </cover-view>
     <!-- <input value="{{markers[0].position}}"/> -->
-    <input bindtap="chooseLocation" value="终点:{{EndPosition}}"/> 
-  </view>
+  </cover-view>
   
 
   

@@ -5,16 +5,16 @@
     <text>需包含数字、字母、符号中至少两种元素，密码长度须8~16位</text>
   </view>
   <view>
-    <input class="setSecurity" placeholder="请输入旧密码"/>
+    <input type='text' value="{{oldPassword}}" bindblur='oldPasswordInput' placeholder="请输入旧密码"/>
   </view>
   <view>
-    <input class="setSecurity" placeholder="请输入新密码"/>
+    <input type="text" value="{{newPassword}}" bindblur="newPasswordInput" placeholder="请输入新密码"/>
   </view>
   <view>
     <text>忘记旧密码或没有密码</text>
   </view>
   <view>
-    <button>确定</button>
+    <button class="formbtn" bindtap='orderMeeting'>确定</button>
   </view>
 
 </view>

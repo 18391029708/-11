@@ -1,4 +1,5 @@
 // pages/personal/personal.js
+const db = wx.cloud.database()
 var app = getApp();
 Page({
   data: {
@@ -48,8 +49,23 @@ Page({
       }
     })
     console.log(this.data.chooseBtn)
-  
-    // app.globalData.hidden2=this.data.switch1Checked;
+    // 获取用户车辆认证信息为真则显示按钮
+    db.collection('common_userInfo_list').where({_openid:app.globalData.openid,'vehicleInformation.have' :'true'}).get({
+      success: function(res) {
+        // res.data 包含该记录的数据
+        console.log(res.data)
+        for(var i = 0; i < res.data.length; i++){
+        // for(const iterator of res.data){
+          if(res.data[i].realName!=undefined && res.data[i].idCardNo!=undefined ){
+            that.setData({
+              chooseBtn:false
+            })
+          }
+        }
+        console.log(that.data.chooseBtn)
+      }
+    })
+      // app.globalData.hidden2=this.data.switch1Checked;
     // console.log(app.globalData.hidden2,this.data.switch1Checked);
   },
   /**
@@ -63,11 +79,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(this.data.chooseBtn)
-    this.setData({
-      chooseBtn:this.data.chooseBtn
-    })
-    console.log(this.data.chooseBtn)
+    // var userName = app.globalData.
+    // if(this.data.userName!='' && this.data.idNo!=''){
+    //   var pages = getCurrentPages();
+    //   var currPages =pages[pages.length - 1];
+    //   var prevPage = pages[pages.length - 3];
+    //   prevPage.setData({
+    //     chooseBtn:false
+
+    // })
+    // console.log(prevPage.data.chooseBtn)
+    
+  // }
+    // console.log(this.data.chooseBtn)
+    // this.setData({
+    //   chooseBtn:this.data.chooseBtn
+    // })
+    // console.log(this.data.chooseBtn)
     
     // app.globalData.hidden2=this.data.hidden2;
     // console.log(app.globalData.hidden2)
@@ -131,9 +159,9 @@ Page({
       url: '../set/set'
     })
   },
-  regulation:function(){
+  sign:function(){
     wx.navigateTo({
-      url: '../regulation/regulation',
+      url: '../sign/sign',
     })
   },
   service: function () {

@@ -7,6 +7,26 @@ Page({
   data: {
 
   },
+  oldPasswordInput:function(e){
+    console.log(e)
+    this.setData({
+      oldPassword:e.detail.value
+    })
+    console.log(this.data.oldPassword)
+  },
+  newPasswordInput:function(e){
+    console.log(e)
+    this.setData({
+      newPassword:e.detail.value
+    })
+    console.log(this.data.newPassword)
+  },
+  orderMeeting:function(){
+    var oldPassword = this.data.oldPassword;
+    console.log(oldPassword)
+    var newPassword = this.data.newPassword;
+    console.log(newPassword)
+  },
 
   /**
    * 生命周期函数--监听页面加载

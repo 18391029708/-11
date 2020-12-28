@@ -47,8 +47,9 @@ Component({
    */
   methods: {
     todetail(e) {
+      console.log(e)
       var tid = e.currentTarget.dataset.id;
-      // console.log(tid)
+      console.log(tid)
       wx.setStorage({
         key: 'selcircle',
         data: this.data.lists[tid]

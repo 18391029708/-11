@@ -1,4 +1,6 @@
 // pages/userInfo/uwerInfo.js
+const timeutil = require('../../utils/TimeUtil.js');
+const app = getApp()
 Page({
 
   /**
@@ -29,33 +31,56 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
+  success: function (e) {
+    console.log(e)
+    this.setData({
+      name:e.detail.name.text,
+      id:e.detail.id.text,
+      gender:e.detail.gender.text,
+      addr:e.detail.address.text,
+      // valid_date:e.detail.valid_date.text
+      
+    })
+    // 前一个页面获取数据
+    var that = this;
+    var pages = getCurrentPages();
+    var currPages =pages[pages.length - 1];
+    var prevPage = pages[pages.length - 2];
+    prevPage.setData({
+    userName:that.data.name,
+    idNo:that.data.id
+})
+// 数据存储数据库
+wx.cloud.callFunction({
+  name:'clouddb',
+  data:{
+    opr:'add',
+    tablename:'electrocar_list',
+    data:{
+      create_time: timeutil.TimeCode(new Date()),
+      update_time: timeutil.TimeCode(new Date()),
+     
+      userid: app.globalData.openid,
+     name:this.data.name,
+     identityCardNo:this.data.id,
+     sex:this.data.gender
+
+    }
+  }
+})
+  },
+  Success: function (e) {
+    console.log(e)
+    this.setData({
+       valid_date:e.detail.valid_date.text
+    })
+  },
  
   onShow: function () {
-    // success: function (e) {
-    //   console.log(e)
-    //   this.setData({
-    //     name:e.detail.name.text,
-    //     id:e.detail.id.text,
-    //     gender:e.detail.gender.text,
-    //     addr:e.detail.address.text,
-    //     // valid_date:e.detail.valid_date.text
-        
-    //   })
-      var that = this;
-      var pages = getCurrentPages();
-      var currPages =pages[pages.length - 1];
-      var prevPage = pages[pages.length - 2];
-      prevPage.setData({
-      userName:that.data.name,
-      idNo:that.data.id
-  })
+ 
+
    
-    // Success: function (e) {
-    //   console.log(e)
-    //   this.setData({
-    //      valid_date:e.detail.valid_date.text
-    //   })
-    // }
+    
     },
    
 

@@ -30,4 +30,22 @@ exports.main = async (event, context) => {
       console.error(e)
     }
   }
+  // else if (opr == 'query') {
+  //   //参数列表: 集合名 删除的元素docid
+  //   // console.log(typeof event.docid == 'undefined')
+
+  //   //条件删除有一些问题 需要修改测试一下下
+  //   //console.log(event.belongs)
+  //   console.log(event.id)
+  //   try {
+  //     return await db.collection(event.tablename).where(event.data).get({
+  //       success: function(res) {
+  //         // res.data 是包含以上定义的两条记录的数组
+  //         console.log(res.data)
+  //       }
+  //     })
+  //   } catch (e) {
+  //     console.error(e)
+  //   }
+  // }
 }

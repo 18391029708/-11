@@ -1,4 +1,9 @@
 //app.js
+// 添加朋友圈
+const cloudsets = require('_self/application.js').CloudSetting;
+const cloud = require('_self/cloud.js');
+// 结束
+var app = getApp()
 App({
 
   onLaunch: function () {
@@ -36,7 +41,7 @@ App({
   },
   globalData: {
     userInfo: null,
-   
+    openid:'',
     hidden2:false,
     
   },
@@ -44,5 +49,61 @@ App({
     wx.cloud.init({
       env:"cloudbase-3grpy11vf179fdac"
     })
+  },
+  
+  // globalData:{
+  //   openid:'',
+  //   userInfo:null
+  // },
+  //先序执行的函数
+  onLaunch: function() {
+    env:'cloudbase-3grpy11vf179fdac';
+    traceUser: true;
+    this.InitCloud();
+  },
+  InitCloud() {
+    var that = this;
+    wx.getStorage({
+      key: 'wxuserinfo',
+      success: function (res) {
+        console.log(res)
+        that.globalData.userInfo = res.data
+      },
+      
+    })
+    console.log(that.globalData.userInfo)
+    if (cloudsets.UseCloud) {
+      console.log('* 云开发 * √' + ' 服务器:' + cloudsets.CloudId)
+      if (!wx.cloud) {
+        console.log(' -- 不支持云开发 -- ')
+      } else {
+        wx.cloud.init({
+          env: cloudsets.CloudId,
+          traceUser: cloudsets.TraceUser
+        })
+        //缓存信息
+        cloud.CallCloudFuncAndSetStorge('openapi', cloudsets.AdaptStorge, 'userinfo',{action:'getOpenData'}).then(function (res) {
+          console.log(res)
+        
+          if (res != 'callfuncfail') {
+            //console.log(res)
+            that.globalData.openid = res //给全局变量 openid 赋值
+            
+          }
+        })
+        console.log(that.globalData.openid)
+        
+
+      }
+    } else {
+      console.log('* 云开发 * X')
+
+    }
+  },
+  ModeServer(){
+    //模式验证函数,检验是否是管理员 用户 / 黑名单用户
+    
   }
+  // 朋友圈结束
+  
 })

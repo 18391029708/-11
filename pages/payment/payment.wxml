@@ -1,4 +1,4 @@
 <!--pages/payment/payment.wxml-->
 
 <view>支付成功</view>
-<button type="primary" bindtap='pay'>获取支付参数</button>
+<button type="primary" bindtap='payf'>获取支付参数</button>

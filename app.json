@@ -6,6 +6,8 @@
     "pages/schoolfellow/schoolfellow",
     "pages/login/login",
     "pages/mymessage/mymessage",
+    "pages/orderReceiving/orderReceiving",
+    "pages/signInfo/signInfo",
    
     "pages/detail/detail",
     "pages/map/map",
@@ -14,7 +16,7 @@
     "pages/showmessage/showmessage",
     "pages/mymoney/mymoney",
     "pages/set/set",
-    "pages/regulation/regulation",
+    "pages/sign/sign",
     "pages/service/service",
     "pages/campus/campus",
     "pages/indentification/indentification",
