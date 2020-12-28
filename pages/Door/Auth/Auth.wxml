@@ -1,2 +1,3 @@
 <!--pages/Door/Auth/Auth.wxml-->
 <text>pages/Door/Auth/Auth.wxml</text>
+<view><text>这是一行文字</text></view>
