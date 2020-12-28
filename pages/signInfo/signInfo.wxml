@@ -1,0 +1,18 @@
+<!--pages/signInfo/signInfo.wxml-->
+<view>
+  <view class="sponsorArea" hidden="{{hidden}}">
+    <text>签到详情</text>
+    <view class="signInfoArea" wx:for="{{signInfo}}">
+      <text>时间</text>
+      <text>地点</text>
+      <text>活动主题{{theme}}</text>
+      <view>用户头像</view>
+    </view>
+  </view>
+  <view class="goSignArea" hidden="{{!hidden}}">
+    <view>
+      <text>签到成功</text>
+    </view>
+  </view>
+  
+</view>

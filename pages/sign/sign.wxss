@@ -1,0 +1,12 @@
+
+.title{
+  background-color: khaki;
+  height: 50px;
+}
+.sponsorSign{
+  background-color: lawngreen;
+}
+.signArea{
+  background-color: lightcoral;
+  height: 200px;
+}

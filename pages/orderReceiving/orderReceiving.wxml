@@ -1,0 +1,18 @@
+<!--pages/orderReceiving/orderReceiving.wxml-->
+<view class='ct'>
+  <view>接单记录</view>
+<view wx:for="{{lists}}" data-item="item" data-index='{{index}}' class='orderRecord'>
+  <view >电车搭乘</view>
+  <view bindtap='detail' >{{item.way_status}} </view>
+  <view>起点：{{item.start_position}}</view>
+  <view>终点：{{item.end_position}}</view>
+  <view>时间：{{item.create_time}}</view>
+ 
+  <!-- <view>
+  {{item.message}}
+  </view> -->
+</view>
+<!-- <view class='orderRecord' wx:if!==></view> -->
+
+
+</view>
