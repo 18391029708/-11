@@ -62,8 +62,20 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/map/map",
-          "pathName": "pages/map/map",
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sign/sign",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/indentification/indentification",
+          "pathName": "pages/indentification/indentification",
           "query": "",
           "scene": null
         },
@@ -74,20 +86,8 @@
           "scene": null
         },
         {
-          "name": "pages/driverPage/driverPage",
-          "pathName": "pages/driverPage/driverPage",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/indexs/indexs",
-          "pathName": "pages/indexs/indexs",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/nnn/nnn",
-          "pathName": "pages/nnn/nnn",
+          "name": "pages/userInfo/userInfo",
+          "pathName": "pages/userInfo/userInfo",
           "query": "",
           "scene": null
         },
@@ -98,8 +98,8 @@
           "scene": null
         },
         {
-          "name": "pages/indexs/indexs",
-          "pathName": "pages/mymessage/mymessage",
+          "name": "pages/mymoney/mymoney",
+          "pathName": "pages/mymoney/mymoney",
           "query": "",
           "scene": null
         },
@@ -110,14 +110,14 @@
           "scene": null
         },
         {
-          "name": "pages/mymessage/mymessage",
-          "pathName": "pages/mymessage/mymessage",
+          "name": "pages/schoolfellow/schoolfellow",
+          "pathName": "pages/schoolfellow/schoolfellow",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/payment/payment",
-          "pathName": "pages/payment/payment",
+          "name": "pages/campus/campus",
+          "pathName": "pages/campus/campus",
           "query": "",
           "scene": null
         },
@@ -128,20 +128,21 @@
           "scene": null
         },
         {
-          "name": "pages/indexs/indexs",
-          "pathName": "pages/indexs/indexs",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/confession/confession",
-          "pathName": "pages/confession/confession",
+          "name": "pages/mymessage/mymessage",
+          "pathName": "pages/mymessage/mymessage",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/sign/sign",
           "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/driverForm/driverForm",
+          "pathName": "pages/driverForm/driverForm",
+          "query": "",
           "scene": null
         }
       ]

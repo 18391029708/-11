@@ -1,53 +1,56 @@
-/* pages/indentification/indentification.wxss */
-
-
 .card{
   width: 90%;
-  height: 150px;
-  border-radius: 10px;
+  height: 300rpx;
+  border-radius: 20rpx;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20rpx;
 }
 .userInfoImage{
   display: flex;
 }
 .userInfoImage image{
-   width: 80px; 
-   height: 80px;
+   width: 160rpx; 
+   height: 160rpx;
    background-color: white;
-   border-radius:80px 80px 80px 80px;
+   border-radius:160rpx 160rpx 160rpx 160rpx ;
    flex:1;
 }
 .userInfoImage .info{
   flex:2;
-  margin: 20px 0;
-  margin-left: 20px;
+  margin: 40rpx 0;
+  margin-left: 40rpx;
+}
+.reminder{
+  color: #555555;
+  font-size: 40rpx;
 }
 .profile_photo{
- margin-bottom: 30px;
- margin-top: 10px;
- margin-left: 10px;
+ margin-bottom: 60rpx;
+ margin-top: 20rpx;
+ margin-left: 20rpx;
 }
 
 .personal_info{
-  margin-top: 10px;
-  border-top: 1px solid rgb(219, 218, 218);
-  margin-left: 20px;
+  margin-top: 20rpx;
+  border-top: 1rpx solid rgb(219, 218, 218);
+  margin-left: 40rpx;
 }
 .id_photo{
-  margin-top: 10px;
-  border-top: 1px solid rgb(219, 218, 218);
-  margin-left: 20px;
+  margin-top: 20rpx;
+  border-top: 1rpx solid rgb(219, 218, 218);
+  margin-left: 40rpx;
 }
 
 .title{
-  margin-top: 10px;
+  margin-top: 20rpx;
+  color: #555555;
+  font-size: 40rpx;
 }
 .vehicle .content{
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
 }
 .content{
-  font-size: 14px;
-  color:grey
+  font-size: 32rpx;
+  color:#999999;
 }

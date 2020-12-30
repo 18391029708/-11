@@ -1,35 +1,31 @@
-<!--pages/personal/myway/myway.wxml-->
 <view class='ct'>
+  <!-- 订单 -->
   <view class='dingdan' hidden="{{hidden}}">
     <view class="order">订单记录</view>
     <view wx:for="{{lists}}" data-item="item" data-index='{{index}}' class='orderRecord'>
       <view class="lev">
-        <text >电车搭乘</text>
+        <text>电车搭乘</text>
         <text class="title">{{item.way_status}}</text>
       </view>
       <view class="iconfont icon-qidian">{{item.start_position}}</view>
       <view class="iconfont icon-zhongdian">{{item.end_position}}</view>
       <view class="iconfont icon-shijian">{{item.create_time}}</view>
     </view>
-  
   </view>
+  <!-- 接单 -->
+  
   <view class='jiedan' hidden="{{!hidden}}">
-    <view>接单记录</view>
-    <!-- reList为接单记录 -->
+    <view class="order">接单记录</view>
     <view wx:for="{{reLists}}" data-item="item" data-index='{{index}}' class='orderRecord'>
-      <view>电车搭乘</view>
-      
-      <view >{{item.way_status}} 
-        <!-- <text>行程结束</text> -->
+      <view class="lev">
+        <text>电车搭乘</text>
+        <text class="title">{{item.way_status}}</text>
       </view>
-      <view>起点：{{item.start_position}}</view>
-      <view >终点：{{item.end_position}}</view>
-      <view>时间：{{item.create_time}}</view>
+      <view class="iconfont icon-qidian">{{item.start_position}}</view>
+      <view class="iconfont icon-zhongdian">{{item.end_position}}</view>
+      <view class="iconfont icon-shijian">{{item.create_time}}</view>
       <view bindtap="over" id='{{item._id}}' hidden="{{hidden1}}">结束行程</view>
     </view>
   </view>
-  
-
-
 
 </view>

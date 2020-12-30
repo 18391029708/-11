@@ -1,24 +1,16 @@
-<!--pages/driverForm/driverForm.wxml-->
 <view class="ct">
   <view class='form'>
+    <view class="list">接单页面</view>
+    
     <view wx:for="{{wayBill}}">
       <view class='orders'>
-       
-        <view>{{item.start_position}}</view>
-        <view>{{item.end_position}}</view>
-        <view>{{item.update_time}}</view>
-        <view bindtap='orderReceiving' id='{{item._id}}'>接单</view>
-        <!-- 滑动按钮 -->
-       <!-- <view>  -->
-     
-      <!-- </view> -->
+        <view class="lev">
+          <view class="origin iconfont icon-qidian">{{item.start_position}}</view>
+          <view class="order" bindtap='orderReceiving' id='{{item._id}}'>接单</view>
+        </view>
+        <view class="iconfont icon-zhongdian">{{item.end_position}}</view>
+        <view class="iconfont icon-shijian">{{item.update_time}}</view>
       </view>
-      <!-- <view class="jiedan">
-        <button class="mini-btn" type="default" size="mini" bindtap="accpetOrder" >接单</button>
-      </view> -->
-
     </view>
-    
-
   </view>
 </view>

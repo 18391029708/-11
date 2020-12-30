@@ -1,5 +1,3 @@
-<!--pages/indentification/indentification.wxml-->
-
 <view class='ct'>
   
   <view class='cardArea'>
@@ -23,13 +21,6 @@
   <view class="content">完善个人信息，体验更多服务</view>
 </view>
  
-
-
-<!-- <view class="id_photo" bindtap='faceIdentification'>
-  <view class="title">人像认证</view>
-  <view class="content">体验刷脸科技，感受科技乐趣</view>
-</view>
-  -->
 <view class="id_photo" bindtap='electricVehicle'>
   <view class="title">车辆认证</view>
   <view class="content">体验刷脸科技，感受科技乐趣</view>

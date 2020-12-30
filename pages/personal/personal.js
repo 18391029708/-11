@@ -128,11 +128,13 @@ Page({
    * 用户点击右上角分享
    */
   
+  // 功能
   personal:function(){
     wx.navigateTo({
       url: '../showmessage/showmessage'
     })
   },
+
   indentification:function(){
     wx.navigateTo({
       url: '../indentification/indentification'
@@ -144,35 +146,35 @@ Page({
       url: '../mymoney/mymoney'
     })
   },
+
   set:function(){
     wx.navigateTo({
       url:'../set/set'
     })
   },
+
   mymessage: function () {
     wx.navigateTo({
       url: '../mymessage/mymessage'
     })
   },
+
   setto: function () {
     wx.navigateTo({
       url: '../set/set'
     })
   },
+
   sign:function(){
     wx.navigateTo({
       url: '../sign/sign',
     })
   },
+
   service: function () {
     wx.navigateTo({
       url: '../service/service'
     })
-  },
+  }
 
-  // product: function () {
-  //   wx.navigateTo({
-  //     url: 'product/productmanage'
-  //   })
-  // }
 })

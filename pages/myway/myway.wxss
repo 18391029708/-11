@@ -1,4 +1,4 @@
-
+/* 订单记录 */  /* 接单记录 */
 .orderRecord{
   width:100%;
   height: flex;
@@ -7,15 +7,23 @@
 }
 .order{
   text-align: center;
-  color:grey;
-  font-size: 15px;
+  color: #555555;
+  font-size: 42rpx;
+  margin: 20rpx auto;
 }
 .lev{
   margin-left: 15px;
+  color: #555555;
+  font-size: 40rpx;
 }
 .title{
   padding-left:150px ;
+  color: #555555;
+  font-size: 40rpx;
 }
 .iconfont{
   margin-left: 10px;
+  color: #555555;
+  font-size: 40rpx;
 }
+

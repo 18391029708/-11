@@ -1,21 +1,19 @@
-<!--pages/personal/mymoney/mymoney.wxml-->
 <view class='ct'>
-  <view class='head'>余额</view>
-<view class='line'></view>
 
+  <view class="item">
+    <text class=" iconfont icon-zhanghuyue title">账户余额</text>
+    <text>￥100</text>
+  </view>
 
-<view style='margin-left:3%;font-size:15px;width:80%;'>账户余额</view>
-<view class='mymoney'style='font-size:12px;'>{{mymoney}}元</view>
-<view>
-  <text>提现</text>
+  <view class='line'></view>
+  <view class="item">
+    <text class="iconfont icon-icon" bindtap="bankCard">银行卡</text>
+  </view>
+
+  <view class='line'></view>
+  <view class="item">
+    <text class="iconfont icon-tixian">提现</text>
+  </view>
+  <view class='line'></view>
+
 </view>
-<view class='line'></view>
-<view>
-  <text bindtap="bankCard">银行卡</text>
-</view>
-
-
-</view>
-
-
-

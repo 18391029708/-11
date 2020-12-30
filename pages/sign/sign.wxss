@@ -1,12 +1,47 @@
-
 .title{
-  background-color: khaki;
-  height: 50px;
+  display: flex;
+  width: 600rpx;
+  height: 300rpx;
+  line-height: 300rpx;
+  margin: 20rpx auto;
 }
+
 .sponsorSign{
-  background-color: lawngreen;
+  flex: 1;
+  background-color:#FF9966 ;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15rpx;
 }
+
+.signing{
+  flex: 1;
+  background-color: #FF9999;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 15rpx;
+}
+
 .signArea{
-  background-color: lightcoral;
-  height: 200px;
+  margin: 20rpx auto;
+  width: 95%;
+  height: 200rpx;
+  border: 1rpx solid #eeeeee;
+  color: #555555;
+  font-size: 40rpx;
+}
+
+.pl{
+  color: #BBBBBB;
+  font-size: 32rpx;
+}
+
+.btn{
+  margin-top: 20rpx;
+  background-color: #FF9999;
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  font-size: 40rpx;
 }

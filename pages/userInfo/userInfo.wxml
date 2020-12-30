@@ -1,54 +1,49 @@
-<!--pages/userInfo/userInfo.wxml-->
 <view class='ct'>
 
   <view class='line'></view>
   <view class='content'>
-    <text>姓名</text>
+    <text class="title_type1">姓名</text>
     <text>{{name}}</text>
   </view>
 
   <view class='line'></view>
   <view class='content'>
-    <text>性别</text>
+    <text class="title_type1">性别</text>
     <text>{{gender}}</text>
   </view>
 
   <view class='line'></view>
   <view class='content'>
-    <text>国籍</text>
+    <text class="title_type1">国籍</text>
     <text>中国大陆</text>
   </view>
 
   <view class='line'></view>
   <view class='content'>
-    <text>证件类型</text>
+    <text class="title_type2">证件类型</text>
     <text>身份证</text>
   </view>
 
   <view class='line'></view>
   <view class='content'>
-    <text>证件号码</text>
+    <text class="title_type2">证件号码</text>
     <text>{{id}}</text>
   </view>
 
   <view class='line'></view>
   <view class='content'>
-    <text>证件有效期</text>
+    <text class="title_type3">证件有效期</text>
     <text>{{valid_date}}</text>
   </view>
 
-  
-<view>
-  <ocr-navigator bind:onSuccess="success" certificateType="idCard" opposite="{{false}}">
-      <button type="primary">身份证正面识别</button>
+
+  <view>
+    <ocr-navigator bind:onSuccess="success" certificateType="idCard" opposite="{{false}}">
+      <button class="btn">身份证正面识别</button>
     </ocr-navigator>
     <ocr-navigator bind:onSuccess="Success" certificateType="idCard" opposite="{{true}}">
-      <button type="primary">身份证反面识别</button>
+      <button class="btn">身份证反面识别</button>
     </ocr-navigator>
-
-  
-</view>
+  </view>
 
 </view>
-
-

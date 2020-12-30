@@ -1,7 +1,31 @@
-<!--pages/schoolfellow/schoolfellow.wxml-->
-<view class='ct'>
-  <view wx:for="{{schoolfellow}}">
-  {{index}}:{{item.name}}
+<view class="ct">
+<view class="item">
+  <view class="content">
+    <view class="profile">
+      <image src="../../icons/me.png"></image>
+    </view>
+    <view class="name"><text>姓名</text></view>
   </view>
+  <view class="line"></view>
 </view>
-<view>2222</view>
+
+<view class="item">
+  <view class="content">
+    <view class="profile">
+      <image src="../../icons/me.png"></image>
+    </view>
+    <view class="name"><text>姓名</text></view>
+  </view>
+  <view class="line"></view>
+</view>
+
+<view class="item">
+  <view class="content">
+    <view class="profile">
+      <image src="../../icons/me.png"></image>
+    </view>
+    <view class="name"><text>姓名</text></view>
+  </view>
+  <view class="line"></view>
+</view>
+</view>

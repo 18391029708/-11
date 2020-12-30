@@ -1,8 +1,26 @@
-/* pages/bankCard/bankCard.wxss */
-.ocr-wrapper {
-  margin: 40rpx auto;
-  width: 375rpx;
+.cardSize{
+  width: 90%;
+  height: 200rpx;
+  background-color: #FF6699;
+  margin: 20rpx auto;
+  color: #555555;
+  font-size: 40rpx;
 }
-.intro {
-  margin: 40rpx;
+
+.name{
+  padding-top: 30rpx;
+  margin: 30rpx 30rpx;
+}
+
+.id{
+  margin: 30rpx 30rpx;
+}
+
+.btn{
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color:#FF9999;
+  color: #555555;
+  font-size: 40rpx;
 }

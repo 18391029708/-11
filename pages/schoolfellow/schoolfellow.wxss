@@ -1,1 +1,30 @@
-/* pages/schoolfellow/schoolfellow.wxss */
+.content{
+  margin: 20rpx 20rpx;
+  display: flex;
+}
+
+.profile{
+  flex: 1;
+}
+
+.profile image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.name{
+  flex:4;
+}
+
+.name text{
+  color: #555555;
+  font-size: 40rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.line{
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 1rpx;
+}

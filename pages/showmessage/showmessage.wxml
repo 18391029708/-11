@@ -1,49 +1,40 @@
-<!--pages/personal/personmessage/psm.wxml-->
 <view class='ct'>
-  <view class='line l1'></view>
-<view class='messageTop'>
- <view class="section">
-  
-</view>
-<!-- <button bindtap='scanImageInfo'>识别校园卡或学生证</button> -->
+  <view class='line'></view>
+  <view class='message'>学校名称
+    <view class="section_school">
+      <view>{{schoolName}}</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='message'>学号
+    <view class="section">
+      <view>{{no}}</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='message'>姓名
+    <view class="section">
+      <view>{{name}}</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='message'>性别
+    <view class="section">
+      <view>{{sex}}</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <view class='message'>手机号
+    <view class="section_phone">
+      <view>{{uphone}}</view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+  <button class="btn" bindtap='electricVehicle'>我有电动车,同意并进行车手认证</button>
 
 </view>
-
-
-<view class='line l1'></view>
-<view class='message m1'>学校名称
- <view class="section">
-  <view>{{schoolName}}</view>
-</view>
-</view>
-<view class='line l1'></view>
-<view class='message m1'>学号
- <view class="section">
-<view>{{no}}</view>
-</view>
-</view>
-<view class='line l1'></view>
-<view class='message m1'>姓名
- <view class="section">
-<view>{{name}}</view>
-</view>
-</view>
-<view class='line l1'></view>
-<view class='message m1'>性别
- <view class="section">
-<view>{{sex}}</view>
-</view>
-</view>
-
-<view class='line l1'></view>
-<view class='message m1'>手机号
- <view class="section" style='margin-left:29rpx;width:300rpx;'>
-<view>{{uphone}}</view>
-</view>
-</view>
-
-<view class='line l1'></view>
-<button bindtap='electricVehicle' >我有电动车,同意并进行车手认证</button>
-
-</view>
-

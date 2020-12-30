@@ -1,41 +1,21 @@
 <view class="ct">
+
   <view class="title">
     <view class="sponsorSign" bindtap="sponsorSign">发起签到</view>
-    <view bindtap="goSign">去签到</view>
+    <view class="signing" bindtap="goSign">去签到</view>
   </view>
 
   <view class="signArea" hidden="{{hidden}}">
-    <view><text>签到主题：</text>
-      <input bindinput="inputTheme" />
+    <view class="theme">
+      <view>签到主题</view>
+      <input class="weui-input" placeholder="输入主题" placeholder-class="pl" bindinput="signtheme" type="text" />
     </view>
-    <view><text bindtap="signString">生成签到字符串：{{signString}}</text></view>
-    <view><button bindtap="confirm">确认发起</button></view>
+    
+    <view class="code">
+      <view>签到码</view>
+      <input placeholder="输入签到码" placeholder-class="pl" bindinput="signpwds" type="text" />
+    </view>
+
+    <button class="btn" bindtap="confirmbtns">确认签到</button>
   </view>
-
-  <view class="weui-cells weui-cells_after-title" hidden="{{!hidden}}">
-    <view class="weui-cell ">
-      <view class="weui-cell__hd">
-        <view class="weui-label">签到主题</view>
-
-      </view>
-      <view class="weui-cell__bd">
-        <input class="weui-input" placeholder="输入主题" bindinput="signtheme" type="text" />
-      </view>
-    </view>
-    <view class="weui-cell ">
-      <view class="weui-cell__hd">
-        <view class="weui-label">签到码</view>
-      </view>
-      <view class="weui-cell__bd">
-        <input placeholder="输入签到码" bindinput="signpwds" type="text" />
-      </view>
-    </view>
-    <button type="primary" bindtap="confirmbtns">确认签到</button>
-  </view>
- 
-
-
-
-
-
 </view>

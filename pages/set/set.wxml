@@ -1,20 +1,34 @@
-<!--pages/set/set.wxml-->
 <view class='ct'>
-  <view>
-    <text>修改密码</text>
-    <text>需包含数字、字母、符号中至少两种元素，密码长度须8~16位</text>
+
+  <view class="title">修改密码</view>
+
+  <view class="item">
+    <view class="content">旧密码</view>
+    <view>
+      <input auto-focus="true" type='password' value="{{oldPassword}}" bindblur='oldPasswordInput' placeholder="请输入旧密码" />
+    </view>
+    <view class="line"></view>
   </view>
-  <view>
-    <input type='text' value="{{oldPassword}}" bindblur='oldPasswordInput' placeholder="请输入旧密码"/>
+
+  <view class="item">
+    <view class="content">新密码</view>
+    <view>
+      <input type="password" value="{{newPassword}}" bindblur="newPasswordInput" placeholder="8~20位，含数字和字母组合" placeholder-class="input-placeholder" placeholder-class="input-placeholder"/>
+    </view>
+    <view class="line"></view>
   </view>
-  <view>
-    <input type="text" value="{{newPassword}}" bindblur="newPasswordInput" placeholder="请输入新密码"/>
+
+  <view class="item">
+    <view class="content">确认密码</view>
+    <view>
+      <input type="password" value="{{newPassword}}" bindblur="newPasswordInput" placeholder="再次输入密码" placeholder-class="input-placeholder"/>
+    </view>
+    <view class="line"></view>
   </view>
+
+
   <view>
-    <text>忘记旧密码或没有密码</text>
-  </view>
-  <view>
-    <button class="formbtn" bindtap='orderMeeting'>确定</button>
+    <button class="btn" bindtap='orderMeeting'>确定</button>
   </view>
 
 </view>

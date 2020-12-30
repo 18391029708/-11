@@ -1,10 +1,12 @@
-<!--pages/bankCard/bankCard.wxml-->
 <view class='ct'>
+
   <view class='cardSize'>
-    <view>{{bankName}}</view>
-    <view>{{cardId}}</view>
+    <view class="name">{{bankName}}工商银行</view>
+    <view class="id">{{cardId}}****8343</view>
   </view>
-  <ocr-navigator bind:onSuccess="blankSuccess"  certificateType="bankCard">
-  <button type="primary">银行卡识别</button>
-</ocr-navigator>
+
+  <ocr-navigator bind:onSuccess="blankSuccess" certificateType="bankCard">
+    <button class="iconfont icon-hao btn">添加银行卡</button>
+  </ocr-navigator>
+
 </view>
